@@ -8,7 +8,8 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif
+    font-family: 'Public Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #header {
@@ -24,6 +25,15 @@ html {
     background-color: rgba(26, 20, 15, 0.75);
     backdrop-filter: blur(1.5rem); 
     -webkit-backdrop-filter: blur(1.5rem);
+}
+
+button:focus,
+button:focus-visible,
+a:focus,
+a:focus-visible,
+[role="button"]:focus,
+[role="button"]:focus-visible {
+  outline: none;
 }
 
 #logo {
