@@ -80,10 +80,12 @@ function checkAnswer(selected) {
         btn.disabled = true;
     });
 
+    document.getElementById("finish-btn").style.display = "inline-block";
+
     if (currentIdx < questions.length - 1) {
         document.getElementById("next-btn").style.display = "inline-block";
     } else {
-        document.getElementById("finish-btn").style.display = "inline-block";
+        document.getElementById("next-btn").style.display = "none";
     }
 }
 
