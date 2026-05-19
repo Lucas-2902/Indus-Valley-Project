@@ -84,5 +84,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="vote-section">
+            <h1>How Do YOU Think the Indus Valley Civilization Declined?</h1>
+            <p>Vote for the theory you believe is most likely.</p>
+    
+            <div class="vote-options">
+                <button onclick="vote('drought')">🌵 Drought & Drying Rivers</button>
+    
+                <button onclick="vote('migration')">⚔ Migration & Conflict</button>
+    
+                <button onclick="vote('floods')">🌊 Ecological Collapse & Floods</button>
+    
+                <button onclick="vote('other')">❓ Other Reasons</button>
+            </div>
+    
+            <div id="vote-message" class="vote-message"></div>
+    
+            <div class="results" id="results-box" style="display:none;">
+    
+                <h2>Community Opinion</h2>
+    
+                <div class="result-item">
+                    🌵 Drought & Drying Rivers —
+                    <span id="drought-percent"></span>
+                </div>
+    
+                <div class="result-item">
+                    ⚔ Migration & Conflict —
+                    <span id="migration-percent"></span>
+                </div>
+    
+                <div class="result-item">
+                    🌊 Ecological Collapse —
+                    <span id="floods-percent"></span>
+                </div>
+    
+                <div class="result-item">
+                    ❓ Other —
+                    <span id="other-percent"></span>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
