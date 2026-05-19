@@ -1,22 +1,24 @@
 /* Home Page */
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
 
 html {
     font-size: 1.2vw; 
     background-color: #000;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #c48e3d;
-    font-family: 'Public Sans', sans-serif;
-    color: #c48e3d;
+    line-height: 1.8;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
-    -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3{
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
 }
 
 #header {
