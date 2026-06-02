@@ -40,8 +40,6 @@ function update(){
 
 update();
 
-/* ================= PUSH ================= */
-
 function push(){
 
     if(gameOver) return;
@@ -62,15 +60,11 @@ function push(){
 
     score += 1;
 
-    /* SHAKE EFFECT */
-
     arena.classList.add("shake");
 
     setTimeout(()=>{
         arena.classList.remove("shake");
     },100);
-
-    /* PLAYER ANIMATION */
 
     player.style.transform = "translateY(-8px)";
 
@@ -82,8 +76,6 @@ function push(){
 btn.addEventListener("mousedown", push);
 btn.addEventListener("touchstart", push);
 
-/* ================= CLICK SPEED ================= */
-
 setInterval(()=>{
 
     cps = clicks;
@@ -91,8 +83,6 @@ setInterval(()=>{
     clicks = 0;
 
 },1000);
-
-/* ================= GAME LOOP ================= */
 
 setInterval(()=>{
 
@@ -130,8 +120,6 @@ setInterval(()=>{
     playerPos += totalForce * 0.05;
     enemyPos += totalForce * 0.05;
 
-    /* DAMAGE */
-
     if(totalForce > 0){
 
         aiHealth -= totalForce * 0.04;
@@ -153,8 +141,6 @@ setInterval(()=>{
         },50);
     }
 
-    /* LIMITS */
-
     if(playerHealth < 0){
         playerHealth = 0;
     }
@@ -168,8 +154,6 @@ setInterval(()=>{
     checkWin();
 
 },16);
-
-/* ================= WIN CHECK ================= */
 
 function checkWin(){
 
@@ -203,8 +187,6 @@ function checkWin(){
         },3500);
     }
 }
-
-/* ================= EFFECTS ================= */
 
 function createVictoryFlash(){
 
